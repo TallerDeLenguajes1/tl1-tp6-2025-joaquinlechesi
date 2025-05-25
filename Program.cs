@@ -1,14 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+// Console.WriteLine("Hello, World!");
 
-int a;
+// int a;
 
-int b;
+// int b;
 
-a = 10;
+// a = 10;
 
-b = a;
+// b = a;
 
-Console.WriteLine("valor de a:"+a);
+// Console.WriteLine("valor de a:"+a);
 
-Console.WriteLine("valor de b:"+b);
+// Console.WriteLine("valor de b:"+b);
+Console.WriteLine("CalculadoraV2");
