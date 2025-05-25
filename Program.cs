@@ -16,18 +16,21 @@ Console.WriteLine("CalculadoraV2");
 
 int opcion = 0, numero;
 float resultado;
+Console.WriteLine("Ingrese un opcion:");
+int.TryParse(Console.ReadLine(), out opcion);
 while (opcion != 0)
 {
-    Console.WriteLine("Ingrese un opcion:");
-    int.TryParse(Console.ReadLine(), out opcion);
     Console.WriteLine("Ingrese un numero:");
     int.TryParse(Console.ReadLine(), out numero);
     switch (opcion)
     {
         case 1:
+            resultado = Math.Abs(numero);
+            Console.WriteLine("El VALOR ABSOLUTO del numero es: " + resultado);
             break;
         case 2:
             resultado = numero * numero;
+            Console.WriteLine("El CUADRADO del numero es: " + resultado);
             break;
         case 3:
             break;
@@ -40,4 +43,6 @@ while (opcion != 0)
         default:
             break;
     }
+    Console.WriteLine("Ingrese un opcion:");
+    int.TryParse(Console.ReadLine(), out opcion);
 }
