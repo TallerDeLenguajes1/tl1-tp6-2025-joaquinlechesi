@@ -22,8 +22,9 @@ while (opcion != 0)
 {
     switch (opcion)
     {
-        case 1:    Console.WriteLine("Ingrese un numero:");
-        double.TryParse(Console.ReadLine(), out numero);
+        case 1:
+            Console.WriteLine("Ingrese un numero:");
+            double.TryParse(Console.ReadLine(), out numero);
             resultado = Math.Abs(numero);
             Console.WriteLine("El VALOR ABSOLUTO del numero es: " + resultado);
             break;
@@ -50,10 +51,13 @@ while (opcion != 0)
             Console.WriteLine("Ingrese un numero:");
             double.TryParse(Console.ReadLine(), out numero);
             resultado = Math.Sin(numero);
+            Console.WriteLine("El SENO del numero es: " + resultado);
             break;
         case 5:
             Console.WriteLine("Ingrese un numero:");
             double.TryParse(Console.ReadLine(), out numero);
+            resultado = Math.Cos(numero);
+            Console.WriteLine("El COSENO del numero es: " + resultado);
             break;
         case 6:
             Console.WriteLine("Ingrese un numero:");
@@ -66,3 +70,4 @@ while (opcion != 0)
     Console.WriteLine("Ingrese un opcion:");
     int.TryParse(Console.ReadLine(), out opcion);
 }
+Console.WriteLine("Fin del programa.");
