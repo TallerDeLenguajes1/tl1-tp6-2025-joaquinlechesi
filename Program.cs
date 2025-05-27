@@ -72,4 +72,12 @@ while (opcion != 0)
     Console.WriteLine("Ingrese un numero para una opcion:\n1 para calcular el VALOR ABSOLUTO\n2 para calcular el CUADRADO\n3 para calcular la RAIZ CUADRADA\n4 para calcular el SENO\n5 para calcular el COCENO\n6 para calcular la PARTE ENTERA de un numero real");
     int.TryParse(Console.ReadLine(), out opcion);
 }
+
+int primerNumero, segundoNumero;
+Console.WriteLine("Ingrese dos numeros para determinar el MAXIMO y el MINIMO\nIngrese el primer numero:");
+int.TryParse(Console.ReadLine(), out primerNumero);
+Console.WriteLine("Ingrese el segundo numero:");
+int.TryParse(Console.ReadLine(), out segundoNumero);
+Console.WriteLine("El MAXIMO entre los numeros ingresados es " + Math.Max(primerNumero, segundoNumero) + " y el MINIMPO es " + Math.Min(primerNumero, segundoNumero));
+
 Console.WriteLine("Fin del programa.");
