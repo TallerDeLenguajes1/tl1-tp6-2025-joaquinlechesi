@@ -16,7 +16,7 @@ Console.WriteLine("CalculadoraV2");
 
 int opcion = 0;
 double resultado, numero;
-Console.WriteLine("Ingrese un opcion:");
+Console.WriteLine("Ingrese un numero para una opcion:\n1 para calcular el VALOR ABSOLUTO\n2 para calcular el CUADRADO\n3 para calcular la RAIZ CUADRADA\n4 para calcular el SENO\n5 para calcular el COCENO\n6 para calcular la PARTE ENTERA de un numero real");
 int.TryParse(Console.ReadLine(), out opcion);
 while (opcion != 0)
 {
@@ -60,14 +60,16 @@ while (opcion != 0)
             Console.WriteLine("El COSENO del numero es: " + resultado);
             break;
         case 6:
-            Console.WriteLine("Ingrese un numero:");
+            Console.WriteLine("Ingrese un numero real usando COMA:");
             double.TryParse(Console.ReadLine(), out numero);
+            resultado = Math.Truncate(numero);
+            Console.WriteLine("La PARTE ENTERA del numero ingreado es:" + resultado);
             break;
         default:
             Console.WriteLine("El numero ingresado no pertenece a una operacion.");
             break;
     }
-    Console.WriteLine("Ingrese un opcion:");
+    Console.WriteLine("Ingrese un numero para una opcion:\n1 para calcular el VALOR ABSOLUTO\n2 para calcular el CUADRADO\n3 para calcular la RAIZ CUADRADA\n4 para calcular el SENO\n5 para calcular el COCENO\n6 para calcular la PARTE ENTERA de un numero real");
     int.TryParse(Console.ReadLine(), out opcion);
 }
 Console.WriteLine("Fin del programa.");
