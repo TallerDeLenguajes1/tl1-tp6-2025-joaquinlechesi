@@ -60,3 +60,12 @@ Console.WriteLine("La suma de 'num1' y de 'num2' es igual a: " + resultado);
 // break;
 
 // Recorrer la cadena de texto con un ciclo Foreach e ir mostrando elemento por elemento en pantalla
+
+Console.WriteLine("Ingrese otra cadena:");
+cadena = Console.ReadLine();
+foreach (var caracteres in cadena)
+{
+    Console.WriteLine(caracteres);
+}
+
+// Buscar la ocurrencia de una palabra determinada en la cadena ingresada
