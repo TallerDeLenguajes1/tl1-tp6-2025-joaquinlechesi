@@ -69,3 +69,18 @@ foreach (var caracteres in cadena)
 }
 
 // Buscar la ocurrencia de una palabra determinada en la cadena ingresada
+
+Console.WriteLine("Ingrese otra cadena:");
+cadena = Console.ReadLine();
+Console.WriteLine("Ingrese una nueva cadena para buscar la ocurrencia:");
+cadena2 = Console.ReadLine();
+if (cadena.IndexOf(cadena2) != -1)
+{
+    Console.WriteLine("Si hay ocurrencia.");
+}
+else
+{
+    Console.WriteLine("No hay ocurrencia.");
+}
+
+// Convierta la cadena a mayúsculas y luego a minúsculas
