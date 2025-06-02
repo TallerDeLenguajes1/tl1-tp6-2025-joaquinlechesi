@@ -84,3 +84,9 @@ else
 }
 
 // Convierta la cadena a mayúsculas y luego a minúsculas
+
+Console.WriteLine("Ingrese otra cadena:");
+cadena = Console.ReadLine();
+Console.WriteLine("La cadena en MAYUSCULAS es: " + cadena.ToUpper() + ", y la cadena en MINUSCULAS es: " + cadena.ToLower() + ".");
+
+// Ingrese una cadena separada por caracteres que usted determine y muestre por pantalla los resultados (Revisar el comportamiento de split())
