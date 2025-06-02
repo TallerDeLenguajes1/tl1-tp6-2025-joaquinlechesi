@@ -36,3 +36,27 @@ else
 
 // Utilizando la calculadora creada anteriormente realizar las operaciones de dos números y mostrar por pantalla y mostrar en texto el resultado. Por ejemplo para la suma sería: “la suma de “ num1 “ y de” num2 “ es igual a: ” resultado.
 
+// int numero = 1, numeroA, numeroB, resultado;
+string cadenaNumero;
+int num1, num2, resultado;
+// Console.WriteLine("Seleccione una opcion:\n1 para realizar una SUMA\n2 para realizar una RESTA\n3 para realizar una MULTIPLICACION\n4 para realizar una DIVISION\n0 para finalizar.");
+// cadenaNumero = Console.ReadLine();
+// int.TryParse(cadenaNumero, out numero);
+
+Console.WriteLine("Ingrese num1:");
+cadenaNumero =  Console.ReadLine();
+int.TryParse(cadenaNumero, out num1);
+Console.WriteLine("Ingrese num2:");
+cadenaNumero =  Console.ReadLine();
+int.TryParse(cadenaNumero, out num2);
+resultado = num1 + num2;
+Console.WriteLine("La suma de 'num1' y de 'num2' es igual a: " + resultado);
+
+// while (numero != 0)
+// {
+//     switch (numero)
+//     {
+//         case 1:
+// break;
+
+// Recorrer la cadena de texto con un ciclo Foreach e ir mostrando elemento por elemento en pantalla
