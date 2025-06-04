@@ -90,3 +90,20 @@ cadena = Console.ReadLine();
 Console.WriteLine("La cadena en MAYUSCULAS es: " + cadena.ToUpper() + ", y la cadena en MINUSCULAS es: " + cadena.ToLower() + ".");
 
 // Ingrese una cadena separada por caracteres que usted determine y muestre por pantalla los resultados (Revisar el comportamiento de split())
+
+Console.WriteLine("Ingrese una cadena para separar:");
+cadena = Console.ReadLine();
+Console.WriteLine("Ingrese el caracte que desea usar para separar la cadena:");
+cadena2 = Console.ReadLine();
+string[] cadenaMatriz = cadena.Split(cadena2);
+foreach (var cadenas in cadenaMatriz)
+{
+    Console.WriteLine(cadenas);
+}
+
+// Siguiendo con el ejemplo de la calculadora (ejercicio 2) ingrese una ecuación simple como cadena de caracteres y que el sistema lo resuelva. Por ej. ingrese por pantalla “582+2” y que le devuelva la suma de 582 con 2
+
+Console.WriteLine("Ingrese un operacion matematica de suma que desee resolver:");
+
+
+Console.WriteLine("Fin del programa.");
