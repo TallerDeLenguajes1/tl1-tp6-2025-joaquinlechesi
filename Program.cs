@@ -103,7 +103,11 @@ foreach (var cadenas in cadenaMatriz)
 
 // Siguiendo con el ejemplo de la calculadora (ejercicio 2) ingrese una ecuación simple como cadena de caracteres y que el sistema lo resuelva. Por ej. ingrese por pantalla “582+2” y que le devuelva la suma de 582 con 2
 
-Console.WriteLine("Ingrese un operacion matematica de suma que desee resolver:");
-
+Console.WriteLine("Ingrese un operacion matematica de suma que desee resolver, ejemplo '582+2':");
+cadena = Console.ReadLine();
+cadenaMatriz = cadena.Split("+");
+int.TryParse(cadenaMatriz[0].Trim(), out num1);
+int.TryParse(cadenaMatriz[1].Trim(), out num2);
+Console.WriteLine("Resultado de la operacion: " + (num1 + num2));
 
 Console.WriteLine("Fin del programa.");
